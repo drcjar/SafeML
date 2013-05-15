@@ -1,3 +1,5 @@
+#uses pickle to load pre POS tagged word sentence tokens since this is a resource intensive and slow step
+
 import pickle
 import nltk
 import nltk.tag
