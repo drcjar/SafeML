@@ -1,6 +1,7 @@
+#opens a text file containg noun phrase chunks and analyses it
 import nltk 
 
-raw = open('npchunks.txt').read() #loads incident descriptions identified as being due to computer problems
+raw = open('npchunks.txt').read() #loads NP chunks of incident descriptions identified as being due to computer problems
 
 tokens = nltk.wordpunct_tokenize(raw) #tokenizes free text
 
