@@ -1,3 +1,5 @@
+#audits csv file for field completion
+
 import brewery
 from sys import argv
 
