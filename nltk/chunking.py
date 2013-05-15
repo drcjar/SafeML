@@ -1,3 +1,5 @@
+#chunks text from csv into a noun phrases and prints and draws the result
+
 import nltk
 from nltk.tokenize import word_tokenize, wordpunct_tokenize, sent_tokenize
 
