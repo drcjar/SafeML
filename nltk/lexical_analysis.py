@@ -1,3 +1,8 @@
+#Adapted from code examples in S. Bird, E. Klein, and E. Loper. Natural language processing with Python. O’Reilly Media, 2009
+#
+#Takes a text file and tokenizes it words, converts to lower lase, filters stop words, builds vocab for text, calculates lexical diversity, builds collocation, builds frequency distribtion of most common words, builds example dispersion plot of words of interest (manually entered below in this script), displays results 
+
+
 import nltk
 from nltk.corpus import stopwords
 from sys import argv
@@ -20,7 +25,7 @@ text = nltk.Text(tokens) #defines text
 
 words = [w.lower() for w in text] #defines words and makes all words lower case
 
-filtered_words = [w for w in words if not w in stopwords.words('english')] #removes commonly occuring words ("stop words"
+filtered_words = [w for w in words if not w in stopwords.words('english')] #removes commonly occuring words ("stop words")
 
 vocab = sorted(set(words)) #defines vocabulary
 
