@@ -6,7 +6,6 @@
 #distribtion of most common words, builds example dispersion plot of words of interest 
 #(manually entered below in this script), then displays results 
 
-
 import nltk
 from nltk.corpus import stopwords
 from sys import argv
