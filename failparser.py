@@ -1,7 +1,28 @@
-import nltk 
+# coding: 'utf-8'
+import nltk
+import sys
 
-raw = open("data/fail/2010FAI10.html", "rb")
+"""
+NHS hackday
+Script to clean the html codes out of input files
+Each file is converted to a string in the output file.
 
-clean = nltk.clean_html(raw.read())
+Usage:
+  step 1:  collect filenames in a file using ls > temp.file
+  step 2:  $ python failparser.py filenames > output.txt
 
-print clean
+"""
+
+def main():
+  data_names = open(sys.argv[1])
+  aname = data_names.readlines()
+  for f in aname:
+    raw = open(f.strip(), "rb")
+
+    clean = nltk.clean_html(raw.read())
+
+    print clean
+
+
+if __name__ == '__main__':
+    main()
