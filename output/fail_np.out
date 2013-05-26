@@ -1,0 +1,16 @@
+The sheriff, having considered all the evidence presented to him, DETERMINES:   1.
+(S
+  (NP The/DT sheriff/NN)
+  ,/,
+  having/VBG
+  considered/VBN
+  all/DT
+  (NP the/DT evidence/NN)
+  presented/VBD
+  to/TO
+  him/PRP
+  ,/,
+  DETERMINES/NNP
+  :/:
+  1/LS
+  ./.)

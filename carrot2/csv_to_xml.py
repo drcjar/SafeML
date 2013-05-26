@@ -31,7 +31,7 @@ def convert(input_file, output_file, header, query_text):
             count = count + 1
 
     with open(output_file, "wb") as f:
-        f.write( doc.toprettyxml(indent="  ", encoding="UTF-8") )
+        f.write( doc.toprettyxml(indent="  ") )
 
 def create_doc_element(doc, title_text, text, id):
     n = doc.createElement('document')
@@ -82,7 +82,7 @@ Usage:
     python csv_to_xml.py <input file> <col name> <query text>
 
   i.e.
-    python csv_to_xml.py input.xml IN07 "computer failures"
+    python csv_to_xml.py input.csv IN07 "computer failures"
 
   You need to specify the input file and the column name, and don't
   forget to trim any junk before the header fields. Also don't forget to

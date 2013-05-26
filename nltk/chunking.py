@@ -1,13 +1,17 @@
-#chunks text from csv into a noun phrases and prints and draws the result
+#chunks text from file into a noun phrases and prints and draws the result for one sentence 
 
 import nltk
 from nltk.tokenize import word_tokenize, wordpunct_tokenize, sent_tokenize
-
 from nltk.tag import pos_tag
+from sys import argv
 
-raw = open('computers.csv').read()
+script, inputfilename = argv
+
+raw = open('%s' % inputfilename).read()
 
 sentences = sent_tokenize(raw)
+
+print sentences[1]
 
 tagged = pos_tag(word_tokenize(sentences[1]))
 
