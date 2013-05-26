@@ -42,6 +42,8 @@ print "the number of words in the vocabulary is %d" % len(vocab)
 
 print "lexical diversity is %d" % lexical_diversity(text) #prints lexical diversity
 
+print "here are the collocations \n"
+
 text.collocations() #builds collocations
 
 fdist = nltk.FreqDist(filtered_words)

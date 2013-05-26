@@ -22,7 +22,8 @@ def main():
     clean = nltk.clean_html(raw.read())
 
     print clean
-
+    print f, clean, f
+    break
 
 if __name__ == '__main__':
     main()
