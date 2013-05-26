@@ -42,12 +42,12 @@ print "the number of words in the vocabulary is %d" % len(vocab)
 
 print "lexical diversity is %d" % lexical_diversity(text) #prints lexical diversity
 
-print "here are the collocations \n"
+print "here are the collocations.... \n"
 
 text.collocations() #builds collocations
 
-fdist = nltk.FreqDist(filtered_words)
+#fdist = nltk.FreqDist(filtered_words)
 
-fdist.plot(50, cumulative=True) #prints a cumulative frequency distribution of the 50 most commonly used words in the text
+#fdist.plot(50, cumulative=True) #prints a cumulative frequency distribution of the 50 most commonly used words in the text
 
-text.dispersion_plot(["police", "alcohol", "drunk", "weather", "unexpected", "injury", "rescue"]) #example dispersion plot using arbitary seach terms
+#text.dispersion_plot(["police", "alcohol", "drunk", "weather", "unexpected", "injury", "rescue"]) #example dispersion plot using arbitary seach terms
