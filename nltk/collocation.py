@@ -2,8 +2,10 @@ import nltk
 from sys import argv
 from nltk.collocations import *
 
-script, inputfilename, threshold = argv
-threshold = int(threshold)
+script, inputfilename = argv
+
+threshold = 3
+#threshold = int(threshold)
 bigram_measures = nltk.collocations.BigramAssocMeasures()
 trigram_measures = nltk.collocations.TrigramAssocMeasures()
 
